@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+    color: #fff;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
+    color: #333;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero button:hover {
+    background: #f4f4f4;
+}
+
+.menu {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu .food-item {
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 30%;
+}
+
+.menu .food-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.menu .food-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu .food-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Foodies</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Foodies</h1>
+        <p>Delicious meals made with love</p>
+        <button>Explore Menu</button>
+    </section>
+
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="food-item">
+            <img src="https://th.bing.com/th/id/OIP.X61cO3VNEk5OWzq9rFXtXwHaHa?rs=1&pid=ImgDetMain" alt="Food 1">
+            <h3>Food Item 1</h3>
+            <p>Description of Food Item 1</p>
+        </div>
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Food 2">
+            <h3>Food Item 2</h3>
+            <p>Description of Food Item 2</p>
+        </div>
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Food 3">
+            <h3>Food Item 3</h3>
+            <p>Description of Food Item 3</p>
+        </div>
+    </section>
+</body>
+</html>
